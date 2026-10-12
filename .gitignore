@@ -1,0 +1,24 @@
+# Python bytecode and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# macOS and editor files
+.DS_Store
+.vscode/
+
+# Local dataset exports
+/tasks/
+/HumanEval_Tasks/
+
+# Coverage and test-tool caches
+.coverage
+.coverage.*
+.pytest_cache/
+.hypothesis/
+
+# Local environment variables and secrets
+.env
+.env.*
+!.env.example

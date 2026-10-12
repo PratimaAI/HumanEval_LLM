@@ -1,0 +1,102 @@
+[
+    {
+        "task_id": "HumanEval/13",
+        "entry_point": "greatest_common_divisor",
+        "generated_tests": "assert greatest_common_divisor(3, 5) == 1\nassert greatest_common_divisor(25, 15) == 5\nassert greatest_common_divisor(100, 10) == 10\nassert greatest_common_divisor(7, 13) == 1\nassert greatest_common_divisor(0, 5) == 5\nassert greatest_common_divisor(5, 0) == 5\nassert greatest_common_divisor(0, 0) == 0\nassert greatest_common_divisor(-3, 5) == 1\nassert greatest_common_divisor(3, -5) == 1\nassert greatest_common_divisor(-3, -5) == 1"
+    },
+    {
+        "task_id": "HumanEval/31",
+        "entry_point": "is_prime",
+        "generated_tests": "assert is_prime(6) == False\nassert is_prime(101) == True\nassert is_prime(11) == True\nassert is_prime(13441) == True\nassert is_prime(61) == True\nassert is_prime(4) == False\nassert is_prime(1) == False\nassert is_prime(2) == True\nassert is_prime(9973) == True\nassert is_prime(0) == False"
+    },
+    {
+        "task_id": "HumanEval/45",
+        "entry_point": "triangle_area",
+        "generated_tests": "assert triangle_area(5, 3) == 7.5\nassert triangle_area(0, 10) == 0\nassert triangle_area(10, 0) == 0\nassert triangle_area(2.5, 4) == 5.0\nassert triangle_area(10, 10) == 50.0\nassert triangle_area(-1, 10) == ValueError\nassert triangle_area(10, -1) == ValueError\nassert triangle_area(-1, -1) == ValueError\nassert triangle_area(0, 0) == 0\nassert triangle_area(1, 1) == 0.5"
+    },
+    {
+        "task_id": "HumanEval/55",
+        "entry_point": "fib",
+        "generated_tests": "assert fib(0) == 0\nassert fib(1) == 1\nassert fib(2) == 1\nassert fib(3) == 2\nassert fib(4) == 3\nassert fib(5) == 5\nassert fib(6) == 8\nassert fib(7) == 13\nassert fib(8) == 21\nassert fib(9) == 34"
+    },
+    {
+        "task_id": "HumanEval/139",
+        "entry_point": "special_factorial",
+        "generated_tests": "assert special_factorial(1) == 1\nassert special_factorial(2) == 2\nassert special_factorial(3) == 12\nassert special_factorial(4) == 288\nassert special_factorial(5) == 34560\nassert special_factorial(10) == 4395008000\nassert special_factorial(0) == 1\nassert special_factorial(-1) == 1\nassert special_factorial(-10) == 1\nassert special_factorial(100) == 1"
+    },
+    {
+        "task_id": "HumanEval/10",
+        "entry_point": "make_palindrome",
+        "generated_tests": "assert is_palindrome('') == True\nassert is_palindrome('a') == True\nassert is_palindrome('ab') == False\nassert is_palindrome('aba') == True\nassert is_palindrome('abba') == True\nassert is_palindrome('abcba') == True\nassert is_palindrome('abcda') == False\nassert is_palindrome('abcdedcba') == True\nassert is_palindrome('abcdedcbaa') == False\nassert is_palindrome('abcdedcbaab') == False"
+    },
+    {
+        "task_id": "HumanEval/48",
+        "entry_point": "is_palindrome",
+        "generated_tests": "assert is_palindrome('') == True\nassert is_palindrome('a') == True\nassert is_palindrome('aba') == True\nassert is_palindrome('aaaaa') == True\nassert is_palindrome('zbcd') == False\nassert is_palindrome('racecar') == True\nassert is_palindrome('noon') == True\nassert is_palindrome('level') == True\nassert is_palindrome('python') == False\nassert is_palindrome('madam') == True"
+    },
+    {
+        "task_id": "HumanEval/51",
+        "entry_point": "remove_vowels",
+        "generated_tests": "assert remove_vowels('') == ''\nassert remove_vowels('abcdef\\nghijklm') == 'bcdf\\nghjklm'\nassert remove_vowels('abcdef') == 'bcdf'\nassert remove_vowels('aaaaa') == ''\nassert remove_vowels('aaBAA') == 'B'\nassert remove_vowels('zbcd') == 'zbcd'\nassert remove_vowels('AeIoU') == ''\nassert remove_vowels('AEIOU') == ''\nassert remove_vowels('aeiouAEIOU') == ''\nassert remove_vowels('abcdefghijklmnopqrstuvwxyz') == 'bcdfghjklmnpqrstvwxyz'"
+    },
+    {
+        "task_id": "HumanEval/64",
+        "entry_point": "vowels_count",
+        "generated_tests": "assert vowels_count(\"abcde\") == 2\nassert vowels_count(\"ACEDY\") == 3\nassert vowels_count(\"rhythm\") == 0\nassert vowels_count(\"SYZYGY\") == 1\nassert vowels_count(\"quick\") == 1\nassert vowels_count(\"fly\") == 0\nassert vowels_count(\"a\") == 1\nassert vowels_count(\"e\") == 1\nassert vowels_count(\"i\") == 1\nassert vowels_count(\"o\") == 1\nassert vowels_count(\"u\") == 1\nassert vowels_count(\"y\") == 1\nassert vowels_count(\"\") == 0\nassert vowels_count(\"AEIOUY\") == 6"
+    },
+    {
+        "task_id": "HumanEval/140",
+        "entry_point": "fix_spaces",
+        "generated_tests": "assert fix_spaces(\"Example\") == \"Example\"\nassert fix_spaces(\"Example 1\") == \"Example_1\"\nassert fix_spaces(\" Example 2\") == \"_Example_2\"\nassert fix_spaces(\" Example   3\") == \"_Example-3\"\nassert fix_spaces(\"  Leading spaces\") == \"_Leading_spaces\"\nassert fix_spaces(\"Trailing spaces  \") == \"Trailing_spaces_\"\nassert fix_spaces(\"  Both   \") == \"_Both-\"\nassert fix_spaces(\"NoSpaces\") == \"NoSpaces\"\nassert fix_spaces(\"     \") == \"-\"\nassert fix_spaces(\"  SingleSpace \") == \"_SingleSpace_\""
+    },
+    {
+        "task_id": "HumanEval/26",
+        "entry_point": "remove_duplicates",
+        "generated_tests": "assert remove_duplicates([1, 2, 3, 2, 4]) == [1, 3, 4]\nassert remove_duplicates([1, 1, 1, 1, 1]) == [1]\nassert remove_duplicates([2, 4, 6, 8, 10]) == [2, 4, 6, 8, 10]\nassert remove_duplicates([]) == []\nassert remove_duplicates([7]) == [7]\nassert remove_duplicates([3, 3, 3, 2, 2, 1]) == [3, 2, 1]\nassert remove_duplicates([5, 5, 5, 5, 5, 5]) == [5]\nassert remove_duplicates([0, 0, 0, -1, -1, -2]) == [0, -1, -2]\nassert remove_duplicates([9, 8, 7, 6, 5, 4, 3, 2, 1]) == [9, 8, 7, 6, 5, 4, 3, 2, 1]\nassert remove_duplicates([10, 20, 20, 10, 30, 40, 40, 30]) == [10, 20, 30, 40]"
+    },
+    {
+        "task_id": "HumanEval/35",
+        "entry_point": "max_element",
+        "generated_tests": "assert max_element([1, 2, 3]) == 3\nassert max_element([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10]) == 123\nassert max_element([-1, -2, -3, -4, -5]) == -1\nassert max_element([1]) == 1\nassert max_element([10, 10, 10, 10]) == 10\nassert max_element([]) == None\nassert max_element([float('inf')]) == float('inf')\nassert max_element([-float('inf'), -float('inf')]) == -float('inf')\nassert max_element([0, 0, 0, 0, 0, 0]) == 0\nassert max_element([1, float('inf')]) == float('inf')"
+    },
+    {
+        "task_id": "HumanEval/47",
+        "entry_point": "median",
+        "generated_tests": "assert median([1, 2, 3, 4, 5]) == 3\nassert median([1, 2, 3, 4, 5, 6]) == 3.5\nassert median([-5, -3, -1, 1, 3, 5]) == 0\nassert median([10]) == 10\nassert median([]) == None\nassert median([10, 10]) == 10\nassert median([1, 3, 3, 6, 7, 8, 9]) == 6\nassert median([1, 3, 3, 6, 7, 8, 9, 10]) == 6.5\nassert median([-100, -50, 0, 50, 100]) == 0\nassert median([-1, -1, -1, -1, -1, -1, -1]) == -1"
+    },
+    {
+        "task_id": "HumanEval/57",
+        "entry_point": "monotonic",
+        "generated_tests": "assert monotonic([1, 2, 4, 20]) == True\nassert monotonic([1, 20, 4, 10]) == False\nassert monotonic([4, 1, 0, -10]) == True\nassert monotonic([1]) == True\nassert monotonic([-1]) == True\nassert monotonic([1, 1, 1, 1]) == True\nassert monotonic([1, 2, 2, 3]) == True\nassert monotonic([3, 2, 1, 1]) == True\nassert monotonic([1, 3, 2]) == False\nassert monotonic([3, 1, 2]) == False"
+    },
+    {
+        "task_id": "HumanEval/127",
+        "entry_point": "intersection",
+        "generated_tests": "assert intersection((1, 2), (2, 3)) == \"NO\"\nassert intersection((-1, 1), (0, 4)) == \"NO\"\nassert intersection((-3, -1), (-5, 5)) == \"YES\"\nassert intersection((0, 5), (5, 10)) == \"NO\"\nassert intersection((1, 10), (5, 15)) == \"YES\"\nassert intersection((-10, -5), (-20, -10)) == \"YES\"\nassert intersection((10, 20), (20, 30)) == \"NO\"\nassert intersection((-100, -50), (-150, -100)) == \"YES\"\nassert intersection((1, 100), (50, 150)) == \"YES\"\nassert intersection((0, 0), (0, 0)) == \"NO\""
+    },
+    {
+        "task_id": "HumanEval/0",
+        "entry_point": "has_close_elements",
+        "generated_tests": "assert has_close_elements([1.0, 2.0, 3.0], 0.5) == False\nassert has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3) == True\nassert has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.25) == True\nassert has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.24) == False\nassert has_close_elements([1.0], 0.5) == False\nassert has_close_elements([], 0.5) == False\nassert has_close_elements([1.0, 1.0], 0.5) == True\nassert has_close_elements([1.0, 1.0], 0.0) == True\nassert has_close_elements([-1.0, 0.0, 1.0], 0.5) == True\nassert has_close_elements([-1.0, 0.0, 1.0], 0.49) == False"
+    },
+    {
+        "task_id": "HumanEval/3",
+        "entry_point": "below_zero",
+        "generated_tests": "```python\nassert below_zero([1, 2, 3]) == False\nassert below_zero([1, 2, -4, 5]) == True\nassert below_zero([0, 0, 0]) == False\nassert below_zero([-1, 2, -3, 4]) == True\nassert below_zero([10, -5, -10, 5]) == True\nassert below_zero([1, 2, 3, 4, 5, -30]) == True\nassert below_zero([1, 2, 3, 4, 5, -2, -2]) == False\nassert below_zero([-1]) == True\nassert below_zero([1]) == False\nassert below_zero([]) == False\n```"
+    },
+    {
+        "task_id": "HumanEval/20",
+        "entry_point": "find_closest_elements",
+        "generated_tests": "```python\nassert find_closest_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.2]) == (2.0, 2.2)\nassert find_closest_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.0]) == (2.0, 2.0)\nassert find_closest_elements([1.0, 2.0, 3.0, 4.0, 5.0, 1.1]) == (1.0, 1.1)\nassert find_closest_elements([1.0, 2.0, 3.0, 4.0, 5.0, 3.0]) == (3.0, 3.0)\nassert find_closest_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.3]) == (2.0, 2.3)\nassert find_closest_elements([1.0, 2.0, 3.0, 4.0, 5.0, 1.2]) == (1.0, 1.2)\nassert find_closest_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.4]) == (2.0, 2.4)\nassert find_closest_elements([1.0, 2.0, 3.0, 4.0, 5.0, 1.3]) == (1.0, 1.3)\nassert find_closest_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.5]) == (2.0, 2.5)\nassert find_closest_elements([1.0, 2.0, 3.0, 4.0, 5.0, 1.4]) == (1.0, 1.4)\n```"
+    },
+    {
+        "task_id": "HumanEval/69",
+        "entry_point": "search",
+        "generated_tests": "assert search([4, 1, 2, 2, 3, 1]) == 2\nassert search([1, 2, 2, 3, 3, 3, 4, 4, 4]) == 3\nassert search([5, 5, 4, 4, 4]) == -1\nassert search([1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2]) == 2\nassert search([10, 10, 10, 10, 10, 10, 10, 10, 10, 10]) == 10\nassert search([100, 100]) == 100\nassert search([100, 101]) == -1\nassert search([1]) == -1\nassert search([2, 2, 2, 2, 1]) == 2\nassert search([3, 3, 3, 3, 3, 2, 2, 2, 2]) == 3"
+    },
+    {
+        "task_id": "HumanEval/124",
+        "entry_point": "valid_date",
+        "generated_tests": "assert valid_date('03-11-2000') == True\nassert valid_date('15-01-2012') == False\nassert valid_date('04-0-2040') == False\nassert valid_date('06-04-2020') == True\nassert valid_date('06/04/2020') == False\nassert valid_date('12-31-2020') == True\nassert valid_date('01-01-1999') == True\nassert valid_date('02-29-2020') == True\nassert valid_date('02-29-2021') == False\nassert valid_date('00-00-0000') == False"
+    }
+]

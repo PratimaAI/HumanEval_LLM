@@ -1,0 +1,3 @@
+Average Pass Rate: 85.43%
+Average HumanEval Coverage: 98.2%
+Average LLM Coverage: 84.65%
